@@ -70,7 +70,7 @@ const App = () => {
     <ApolloProvider client={client}>
       <UserProvider>
         <ModalProvider>
-          <Router>
+          <Router basename={process.env.PUBLIC_URL}>
             <NavigationBar />
             <Routes />
             <AppModal />
